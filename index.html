@@ -8,6 +8,19 @@
 </head>
 <body>
     <h1>Fridge</h1>
+
+    <!-- Verificação de login -->
+    <script>
+        window.onload = function() {
+            const user = JSON.parse(localStorage.getItem("user"));
+
+            if (!user) {
+                // Se não estiver logado, redireciona para a página de login
+                window.location.href = "login.html";
+            }
+        };
+    </script>
+
     <div class="board">
         <div class="column" id="to-do" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h2>Por fazer</h2>
