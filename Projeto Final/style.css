@@ -1,0 +1,105 @@
+/* Estilos gerais */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('Main.png'); /* Imagem da geladeira como fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+/* Estilos do quadro de tarefas */
+.board {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Estilos das colunas */
+.column {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    border-radius: 10px;
+    box-shadow: none; /* Remove a sombra */
+    border: none; /* Remove a borda */
+    background: transparent; /* Torna o fundo completamente transparente */
+}
+
+.column h2 {
+    margin: 10px 0;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Pequena sombra para contraste */
+}
+
+.column button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #f0a500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.column button:hover {
+    background-color: #d48a00;
+}
+
+/* Estilos dos cards */
+.card {
+    width: 180px;
+    height: 180px;
+    background-image: url('postit.png'); /* Imagem de post-it como fundo do card */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo no início do card */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: grab;
+}
+
+.card input, .card textarea {
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    resize: none;
+    width: 100%;
+    margin-top: 10px; /* Adiciona espaçamento entre os campos */
+}
+
+.card input {
+    font-weight: bold;
+    margin-top: 20px; /* Move o campo "Atividade" mais para baixo */
+}
+
+.card textarea {
+    height: 60px;
+}
+
+.card input:focus, .card textarea:focus {
+    outline: none;
+}

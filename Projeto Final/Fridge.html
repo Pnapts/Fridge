@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge - Controle de Tarefas Domésticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fridge</h1>
+    <div class="board">
+        <div class="column" id="to-do" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Por fazer</h2>
+            <button onclick="createCard('to-do')">Adicionar Card</button>
+        </div>
+        <div class="column" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Fazendo</h2>
+            <button onclick="createCard('in-progress')">Adicionar Card</button>
+        </div>
+        <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Terminei!</h2>
+            <button onclick="createCard('done')">Adicionar Card</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
